@@ -112,6 +112,7 @@ p {
     max-width: 556px;
     width: 100%;
     gap: 20px;
+    align-items: flex-start;
 }
 
 h1 {
@@ -141,7 +142,6 @@ h1 {
     font-weight: 700;
     border-radius: 10px;
     padding: 18px 78px;
-    align-items: flex-start;
     margin-top: 50px;
     transition: all 0.3s ease-in;
     border: 1px solid var(--red);
