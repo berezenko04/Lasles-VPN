@@ -1,5 +1,6 @@
 .lasles {
     padding-top: 120px;
+    padding-bottom: 60px;
 
     @include Laptop {
         padding-top: 80px;
@@ -81,7 +82,7 @@
         }
     }
 
-   
+
 }
 
 .line {

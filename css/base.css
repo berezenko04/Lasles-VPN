@@ -225,6 +225,7 @@ nav a {
 
 .lasles {
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 @media screen and (max-width: 1440px) {
   .lasles {
@@ -308,7 +309,7 @@ nav a {
 }
 
 .achievements {
-  padding-top: 100px;
+  padding-top: 40px;
   background-color: hsl(0deg, 0%, 100%);
 }
 @media screen and (max-width: 768px) {
