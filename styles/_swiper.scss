@@ -1,0 +1,87 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    &-wrapper {
+        display: flex;
+        align-items: stretch !important;
+    }
+
+    &-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    &-slide {
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    &-pagination {
+        text-align: left !important;
+
+        &-bullet {
+            width: 15px !important;
+            height: 15px !important;
+
+            &-active {
+                background-color: $red !important;
+                width: 45px !important;
+                border-radius: 10px !important;
+            }
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        right: 0;
+        position: absolute;
+        padding-top: 12px;
+
+        &-next,
+        &-prev {
+            border: 2px solid $red;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+        }
+
+        &-next {
+            background-color: $red;
+
+            svg {
+                transform: rotate(180deg);
+
+                path {
+                    fill: white;
+                }
+            }
+        }
+    }
+}
+
+.mySwiper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}

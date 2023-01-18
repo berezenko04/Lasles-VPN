@@ -1,0 +1,203 @@
+.banner {
+    margin-top: -325px;
+    margin-bottom: 66px;
+    background-color: $neutral-100;
+    padding: 58px 70px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+
+    @include Tablet {
+        padding: 58px 45px;
+    }
+
+    @include Landscape {
+        padding: 30px 45px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        align-items: center;
+
+        @include Landscape {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__btn {
+        padding: 18px 66px;
+        color: $neutral-100;
+        background-color: $red;
+        border-radius: 10px;
+        font-weight: 700;
+        transition: all 0.3s ease-in;
+        border: 1px solid $red;
+        box-shadow: 0px 25px 25px rgba(245, 56, 56, 0.2);
+
+        @include Landscape {
+            padding: 18px 40px;
+        }
+
+        &:hover {
+            background-color: #ffffff;
+            border-color: $red;
+            color: $red;
+        }
+    }
+}
+
+.footer {
+    padding-top: 186px;
+    background-color: #f8f8f8;
+    padding-bottom: 60px;
+
+    @include Tablet {
+        padding-bottom: 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        @include Tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+
+        &__socials {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &__item {
+                display: flex;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                background-color: $neutral-100;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+
+                    path {
+                        fill: $red;
+
+                    }
+                }
+
+                &:hover {
+                    background-color: $red;
+
+                    svg {
+                        path {
+                            fill: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__lasles {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            span {
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: $black;
+            }
+        }
+
+        &__text {
+            max-width: 340px;
+            width: 100%;
+
+            span {
+                color: $gray;
+                font-weight: 500;
+            }
+        }
+
+
+    }
+
+    &__categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 120px;
+
+        @include Tablet {
+            justify-content: flex-start;
+        }
+
+        @include Landscape {
+            flex-direction: column;
+            gap: 50px;
+        }
+
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                a {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    color: #afb5c0;
+
+    span {
+        color: #afb5c0;
+        font-weight: 500;
+    }
+}

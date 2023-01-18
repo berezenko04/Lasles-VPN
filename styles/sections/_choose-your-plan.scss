@@ -1,0 +1,122 @@
+/* Choose Your Plan */
+
+.choose-your-plan {
+    padding-top: 80px;
+    padding-bottom: 150px;
+
+    @include Laptop {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        max-width: 556px;
+        width: 100%;
+
+        h2 {
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+        }
+    }
+
+    &__elements {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: stretch;
+
+        @media screen and (max-width:1150px) {
+            gap: 30px;
+        }
+
+        @include Tablet {
+            flex-direction: column;
+        }
+
+        &__item {
+            padding: 80px 70px 50px;
+            border: 2px solid #dddddd;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+            @media screen and (max-width:1150px) {
+                padding: 60px 50px 40px;
+            }
+
+            &:hover {
+                border-color: $red;
+            }
+
+            &__head {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                height: 100%;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        color: $gray;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            img {
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &__check {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                span {
+                    font-weight: 500;
+                    font-size: 25px;
+                }
+
+                &__btn {
+                    border: 2px solid $red;
+                    border-radius: 50px;
+                    padding: 13px 64px;
+                    color: $red;
+                    font-weight: 700;
+                    transition: all 0.3s ease-in;
+
+                    &:hover {
+                        background-color: $red;
+                        color: $neutral-100;
+                    }
+                }
+            }
+        }
+    }
+}

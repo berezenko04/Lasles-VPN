@@ -1,0 +1,148 @@
+/* Header */
+
+.header {
+    padding: 32px 0;
+    position: sticky;
+    top: 0;
+    background-color: $neutral-100;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &__text {
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: $black;
+            }
+
+            span {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @media screen and (max-width:1150px) {
+            display: none;
+        }
+
+    }
+
+    &__sign {
+        display: flex;
+        gap: 30px;
+        font-weight: 500;
+        align-items: center;
+
+        @media screen and (max-width:1150px) {
+            display: none;
+        }
+    }
+
+    &__btn__sign-up {
+        border-radius: 50px;
+        border: 1px solid $red;
+        padding: 13px 45px;
+        color: $red;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background-color: $red;
+            color: $neutral-100;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+
+        svg {
+            width: 32px;
+            height: 32px;
+
+            path {
+                fill: $red;
+            }
+        }
+
+        &__opened {
+            display: none;
+            flex-direction: column;
+            gap: 30px;
+
+            &__menu {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    color: $gray;
+                    padding: 15px 0;
+                }
+            }
+
+            &__buttons {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                &__sign-in {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $gray;
+                }
+
+                &__sign-up {
+                    background-color: $red;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    padding: 12px 30px;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        @media screen and (max-width:1150px) {
+            display: block;
+        }
+    }
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    a {
+        color: $gray;
+    }
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 2px 12px -3px rgba(18, 18, 18, 0.61);
+    -moz-box-shadow: 0px 2px 12px -3px rgba(18, 18, 18, 0.61);
+    box-shadow: 0px 2px 12px -3px rgba(18, 18, 18, 0.61);
+    z-index: 50;
+}
+
+.flex {
+    display: flex;
+}

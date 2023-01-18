@@ -1,0 +1,62 @@
+.achievements {
+    padding-top: 100px;
+    background-color: $neutral-100;
+
+    &__wrapper {
+        @include Landscape {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__info {
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 37px 90px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        gap: 24px;
+
+        @include Tablet {
+            padding: 37px 50px;
+        }
+
+        @include Landscape {
+            flex-direction: column;
+            padding: 30px 40px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &__item {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+
+            @include Tablet {
+                gap: 20px;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                &__bold {
+                    color: $black;
+                    font-weight: 700;
+                    font-size: 25px;
+                }
+            }
+
+            &__img {
+                svg {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}

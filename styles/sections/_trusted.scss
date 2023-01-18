@@ -1,0 +1,116 @@
+/* Trusted */
+
+.trusted {
+    padding-top: 50px;
+    padding-bottom: 220px;
+
+    &__container {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        position: relative;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 556px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+        h2 {
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+
+        }
+    }
+
+    &__reviews {
+
+        &__item {
+            border: 2px solid #dddddd;
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            user-select: none;
+            min-height: 270px;
+            height: 100%;
+
+            @include Laptop {
+                padding: 20px;
+            }
+
+            &__text {
+                color: $black;
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            &:hover {
+                border: 2px solid $red;
+            }
+
+            &__head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 24px;
+
+                &__content {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+
+                &__mark {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+
+                    svg {
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.review-name {
+    font-weight: 500;
+    font-size: 18px;
+    color: $black;
+    line-height: normal;
+}
+
+.review-city {
+    font-size: 14px;
+    line-height: normal;
+    color: $gray !important;
+}
+
+.review-mark {
+    color: $black;
+    line-height: normal;
+}
