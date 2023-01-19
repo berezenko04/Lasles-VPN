@@ -30,6 +30,7 @@
 }
 .swiper-pagination {
   text-align: left !important;
+  width: 200px !important;
 }
 .swiper-pagination-bullet {
   width: 15px !important;
@@ -102,6 +103,11 @@ button {
   position: sticky;
   top: 0;
   background-color: hsl(0deg, 0%, 100%);
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 24px 0;
+  }
 }
 .header__wrapper {
   display: flex;
